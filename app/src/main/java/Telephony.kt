@@ -24,8 +24,6 @@ import java.io.IOException
 import java.lang.reflect.Method
 
 
-// See also: https://stackoverflow.com/questions/51871673/how-to-answer-automatically-and-programatically-an-incoming-call-on-android
-
 class Telephony : BroadcastReceiver() {
     @SuppressLint("UnsafeProtectedBroadcastReceiver")
     override fun onReceive(context: Context, intent: Intent) {
