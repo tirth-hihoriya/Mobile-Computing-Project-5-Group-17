@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/Activityheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reporting Page"
+            android:textAlignment="center"
+            android:padding="6dp"
+            android:layout_gravity="center"
+            style="?android:attr/listSeparatorTextViewStyle"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/SymptsNameRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Activityheading"
+            android:layout_marginTop="61dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/btnMailTAToRemedies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Based on your given Symptoms\nMail to TA for Remedies"
+            android:visibility="gone"
+            android:onClick="onReportSymptomsMailTA"/>
+
+        <Button
+            android:id="@+id/btnMailToProfessor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@id/btnMailTAToRemedies"
+            android:text="It seems like Your Symptoms are Severe\n Mail to Professor for extension/makeup exam/online exam"
+            android:visibility="gone"
+            android:onClick="onReportSymptomsMailPROF"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

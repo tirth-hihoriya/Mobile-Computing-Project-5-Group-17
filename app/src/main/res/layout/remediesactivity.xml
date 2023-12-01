@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/RemediesActivityheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remedies Page"
+        android:textAlignment="center"
+        android:padding="16dp"
+        style="?android:attr/listSeparatorTextViewStyle"
+        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/remediesResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RetrieveScheduleBtn"
+            android:layout_marginTop="61dp"
+            android:layout_gravity="center"
+            android:hint="Your Remedies will be displayed here"/>
+        <Button
+            android:id="@+id/btnMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="61dp"
+            android:text="If you still want to mail, you can mail TA"
+            android:onClick="onReportSymptomsMailPROF"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
