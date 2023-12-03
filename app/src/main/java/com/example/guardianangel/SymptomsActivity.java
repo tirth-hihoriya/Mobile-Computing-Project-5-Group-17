@@ -828,6 +828,17 @@ public class SymptomsActivity extends AppCompatActivity implements AdapterView.O
 
     }
 
+    public List<String> diagnosis(String query, Context context) throws IOException, CsvException {
+        // Code for symptom logging and diagnosis goes here
+        InputStream inputStream = context.getResources().openRawResource(R.raw.final_file);
+        CSVReader csvReader = new CSVReader(new InputStreamReader(inputStream));
+        List<String[]> data = csvReader.readAll();
+        List<Record> records = data.stream().skip(1).map(Record::new).collect(Collectors.toList());
+        List<String> drugName = solve(records, query);
+        System.out.println(drugName);
+        return drugName;
+    }
+
     public static List<String> solve(List<Record> records, String query) {
         query = query.toLowerCase();
         String finalQuery = query;
