@@ -46,6 +46,8 @@
             android:exported="true"/>
         <activity android:name=".HeartRateResult"
             android:exported="true"/>
+        <activity android:name=".SymptomsActivity"
+            android:exported="true"/>
 
         <activity
             android:name=".MainActivity"

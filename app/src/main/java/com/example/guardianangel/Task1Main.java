@@ -36,14 +36,14 @@ public class Task1Main extends AppCompatActivity {
             }
         });
 
-        *buttonSymptomLogging.setOnClickListener(new View.OnClickListener() {
+        buttonSymptomLogging.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Code for symptom logging and diagnosis goes here
                 openSymptomLogging();
 
             }
-        });*
+        });
 
 
     }
@@ -54,11 +54,15 @@ public class Task1Main extends AppCompatActivity {
     }
 
     private void openRespiratoryRateMonitor() {
+        Intent intent2 = new Intent(this, RespirationProcess.class);
+        startActivity(intent2);
     }
 
 
 
     public void openHeartRateMonitor () {
+        Intent intent = new Intent(this, HeartRateProcess.class);
+        startActivity(intent);
     }
 
     
