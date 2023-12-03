@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Task1Main extends AppCompatActivity {
 
-    Button buttonHeartRate, buttonRespiratoryRate, buttonSymptomLogging;
+    Button buttonHeartRate, buttonRespiratoryRate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,6 @@ public class Task1Main extends AppCompatActivity {
 
         buttonHeartRate = findViewById(R.id.buttonHeartRate);
         buttonRespiratoryRate = findViewById(R.id.buttonRespiratoryRate);
-        buttonSymptomLogging = findViewById(R.id.buttonSymptomLogging);
 
         buttonHeartRate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,19 +30,19 @@ public class Task1Main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Code for respiratory rate calculation goes here
+                openRespiratoryRateMonitor();
             }
         });
 
-        buttonSymptomLogging.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Code for symptom logging and diagnosis goes here
-            }
-        });
+
     }
+
+    private void openRespiratoryRateMonitor() {
+    }
+
+
+
     public void openHeartRateMonitor () {
-        Intent intent1 = new Intent(this, HeartRateActivity.class);
-        startActivity(intent1);
     }
 
 }

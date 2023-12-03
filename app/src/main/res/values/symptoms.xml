@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="symptoms_array">
+        <item>ADHD</item>
+        <item>AIDS Related Wasting</item>
+        <item>AV Heart Block</item>
+        <item>Abdominal Distension</item>
+        <item>Abnormal Uterine Bleeding</item>
+        <item>Abortion</item>
+        <item>Acne</item>
+        <item>Actinic Keratosis</item>
+        <item>Acute Coronary Syndrome</item>
+        <item>Acute Lymphoblastic Leukemia</item>
+        <item>Acute Nonlymphocytic Leukemia</item>
+        <item>Acute Otitis Externa</item>
+        <item>Acute Promyelocytic Leukemia</item>
+        <item>Addison\'s Disease</item>
+        <item>Adrenocortical Insufficiency</item>
+        <item>Adult Human Growth Hormone Deficiency</item>
+        <item>Aggressive Behavi</item>
+        <item>Agitated State</item>
+        <item>Agitation</item>
+        <item>Alcohol Dependence</item>
+        <item>Alcohol Withdrawal</item>
+        <item>Allergic Reactions</item>
+        <item>Allergic Rhinitis</item>
+        <item>Allergic Urticaria</item>
+        <item>Allergies</item>
+        <item>Alopecia</item>
+        <item>Alpha-1 Proteinase Inhibitor Deficiency</item>
+        <item>Alzheimer\'s Disease</item>
+        <item>Amebiasis</item>
+        <item>Amenorrhea</item>
+        <item>Anal Fissure and Fistula</item>
+        <item>Anal Itching</item>
+        <item>Anaphylaxis</item>
+        <item>Anaplastic Astrocytoma</item>
+        <item>Anaplastic Oligodendroglioma</item>
+        <item>Androgenetic Alopecia</item>
+        <item>Anemia</item>
+        <item>Anemia Associated with Chronic Renal Failure</item>
+        <item>Anemia, Chemotherapy Induced</item>
+        <item>Anemia, Sickle Cell</item>
+        <item>Anesthesia</item>
+        <item>Angina</item>
+        <item>Angina Pectoris Prophylaxis</item>
+        <item>Ankylosing Spondylitis</item>
+        <item>Anorexia</item>
+        <item>Antiphospholipid Syndrome</item>
+        <item>Anxiety</item>
+        <item>Anxiety and Stress</item>
+        <item>Aphthous Ulce</item>
+        <item>Arrhythmia</item>
+        <item>Ascariasis</item>
+        <item>Asperger Syndrome</item>
+        <item>Aspergillosis, Aspergilloma</item>
+        <item>Aspiration Pneumonia</item>
+        <item>Asthma</item>
+        <item>Asthma, Maintenance</item>
+        <item>Asthma, acute</item>
+        <item>Asystole</item>
+        <item>Atherosclerosis</item>
+        <item>Atopic Dermatitis</item>
+        <item>Atrial Fibrillation</item>
+        <item>Atrial Flutte</item>
+        <item>Atrophic Urethritis</item>
+        <item>Atrophic Vaginitis</item>
+        <item>Auditory Processing Disorde</item>
+        <item>Autism</item>
+        <item>Autoimmune Hemolytic Anemia</item>
+        <item>Autoimmune Hepatitis</item>
+        <item>Avian Influenza</item>
+        <item>B12 Nutritional Deficiency</item>
+        <item>Back Pain</item>
+        <item>Bacteremia</item>
+        <item>Bacterial Endocarditis Prevention</item>
+        <item>Bacterial Infection</item>
+        <item>Bacterial Skin Infection</item>
+        <item>Bacterial Vaginitis</item>
+        <item>Barrett\'s Esophagus</item>
+        <item>Basal Cell Carcinoma</item>
+        <item>Behcet\'s Disease</item>
+        <item>Benign Essential Trem</item>
+        <item>Benign Prostatic Hyperplasia</item>
+        <item>Benzodiazepine Withdrawal</item>
+        <item>Biliary Cirrhosis</item>
+        <item>Binge Eating Disorde</item>
+        <item>Bipolar Disorde</item>
+        <item>Birth Control</item>
+        <item>Bladder Infection</item>
+        <item>Bleeding Disorde</item>
+        <item>Blepharitis</item>
+        <item>Body Dysmorphic Disorde</item>
+        <item>Bone infection</item>
+        <item>Borderline Personality Disorde</item>
+        <item>Bowel Preparation</item>
+        <item>Brain Tum</item>
+        <item>Breakthrough Pain</item>
+        <item>Breast Cance</item>
+        <item>Breast Cancer, Adjuvant</item>
+        <item>Breast Cancer, Metastatic</item>
+        <item>Breast Cancer, Palliative</item>
+        <item>Breast Cancer, Prevention</item>
+        <item>Bronchiectasis</item>
+        <item>Bronchitis</item>
+        <item>Bronchospasm Prophylaxis</item>
+        <item>Bulimia</item>
+        <item>Bullous Pemphigoid</item>
+        <item>Burning Mouth Syndrome</item>
+        <item>Burns, External</item>
+        <item>Bursitis</item>
+        <item>CMV Prophylaxis</item>
+        <item>CNS Magnetic Resonance Imaging</item>
+        <item>COPD</item>
+        <item>COPD, Acute</item>
+        <item>COPD, Maintenance</item>
+        <item>Cachexia</item>
+        <item>Campylobacter Gastroenteritis</item>
+        <item>Cance</item>
+        <item>Candida Urinary Tract Infection</item>
+        <item>Candidemia</item>
+        <item>Carcinoid Tum</item>
+        <item>Cardiovascular Risk Reduction</item>
+        <item>Cataplexy</item>
+        <item>Cerebral Edema</item>
+        <item>Cervical Dystonia</item>
+        <item>Chlamydia Infection</item>
+        <item>Chronic Eosinophilic Leukemia</item>
+        <item>Chronic Fatigue Syndrome</item>
+        <item>Chronic Idiopathic Constipation</item>
+        <item>Chronic Inflammatory Demyelinating Polyradiculoneuropathy</item>
+        <item>Chronic Lymphocytic Leukemia</item>
+        <item>Chronic Myelogenous Leukemia</item>
+        <item>Chronic Myofascial Pain</item>
+        <item>Chronic Pain</item>
+        <item>Chronic Pancreatitis</item>
+        <item>Chronic Spasticity</item>
+        <item>Clostridial Infection</item>
+        <item>Cluster Headaches</item>
+        <item>Coccidioidomycosis</item>
+        <item>Cogan\'s Syndrome</item>
+        <item>Cold Sores</item>
+        <item>Cold Symptoms</item>
+        <item>Colorectal Cance</item>
+        <item>Computed Tomography</item>
+        <item>Condylomata Acuminata</item>
+        <item>Conjunctivitis</item>
+        <item>Conjunctivitis, Allergic</item>
+        <item>Conjunctivitis, Bacterial</item>
+        <item>Constipation</item>
+        <item>Constipation, Acute</item>
+        <item>Constipation, Chronic</item>
+        <item>Constipation, Drug Induced</item>
+        <item>Corneal Refractive Surgery</item>
+        <item>Coronary Artery Disease</item>
+        <item>Costochondritis</item>
+        <item>Cough</item>
+        <item>Cough and Nasal Congestion</item>
+        <item>Crohn\'s Disease</item>
+        <item>Crohn\'s Disease, Acute</item>
+        <item>Crohn\'s Disease, Maintenance</item>
+        <item>Croup</item>
+        <item>Cutaneous Candidiasis</item>
+        <item>Cutaneous T-cell Lymphoma</item>
+        <item>Cyclic Vomiting Syndrome</item>
+        <item>Cyclothymic Disorde</item>
+        <item>Cystic Fibrosis</item>
+        <item>Dandruff</item>
+        <item>Deep Neck Infection</item>
+        <item>Deep Vein Thrombosis</item>
+        <item>Deep Vein Thrombosis Prophylaxis after Hip Replacement Surgery</item>
+        <item>Deep Vein Thrombosis Prophylaxis after Knee Replacement Surgery</item>
+        <item>Deep Vein Thrombosis, First Event</item>
+        <item>Deep Vein Thrombosis, Prophylaxis</item>
+        <item>Deep Vein Thrombosis, Recurrent Event</item>
+        <item>Delayed Puberty, Male</item>
+        <item>Dementia</item>
+        <item>Dental Abscess</item>
+        <item>Depression</item>
+        <item>Dercum\'s Disease</item>
+        <item>Dermatitis</item>
+        <item>Dermatitis Herpeti</item>
+        <item>Dermatologic Lesion</item>
+        <item>Dermatological Disorders</item>
+        <item>Dermatomyositis</item>
+        <item>Dermatophytosis</item>
+        <item>Diabetes Insipidus</item>
+        <item>Diabetes, Type 1</item>
+        <item>Diabetes, Type 2</item>
+        <item>Diabetic Kidney Disease</item>
+        <item>Diabetic Macular Edema</item>
+        <item>Diabetic Peripheral Neuropathy</item>
+        <item>Diagnosis and Investigation</item>
+        <item>Diaper Rash</item>
+        <item>Diarrhea</item>
+        <item>Diarrhea, Acute</item>
+        <item>Diarrhea, Chronic</item>
+        <item>Dientamoeba fragilis</item>
+        <item>Dietary Fiber Supplementation</item>
+        <item>Dietary Supplementation</item>
+        <item>Dissociative Identity Disorde</item>
+        <item>Diverticulitis</item>
+        <item>Dry Eye Disease</item>
+        <item>Dry Skin</item>
+        <item>Dumping Syndrome</item>
+        <item>Duodenal Ulce</item>
+        <item>Dupuytren\'s contracture</item>
+        <item>Dysautonomia</item>
+        <item>Dyspareunia</item>
+        <item>Dystonia</item>
+        <item>Dysuria</item>
+        <item>Ear Wax Impaction</item>
+        <item>Ectopic Pregnancy</item>
+        <item>Eczema</item>
+        <item>Edema</item>
+        <item>Ehrlichiosis</item>
+        <item>Emergency Contraception</item>
+        <item>Endometrial Cance</item>
+        <item>Endometrial Hyperplasia</item>
+        <item>Endometrial Hyperplasia, Prophylaxis</item>
+        <item>Endometriosis</item>
+        <item>Endoscopy or Radiology Premedication</item>
+        <item>Enterocolitis</item>
+        <item>Eosinophilic Esophagitis</item>
+        <item>Epicondylitis, Tennis Elbow</item>
+        <item>Epilepsy</item>
+        <item>Erectile Dysfunction</item>
+        <item>Erosive Esophagitis</item>
+        <item>Euvolemic Hyponatremia</item>
+        <item>Expectoration</item>
+        <item>Extrapyramidal Reaction</item>
+        <item>Eye Redness</item>
+        <item>Eye Redness/Itching</item>
+        <item>Eyelash Hypotrichosis</item>
+        <item>GERD</item>
+        <item>Gallbladder Disease</item>
+        <item>Gas</item>
+        <item>Gastric Ulcer Maintenance Treatment</item>
+        <item>Gastritis/Duodenitis</item>
+        <item>Gastroenteritis</item>
+        <item>Gastrointestinal Decontamination</item>
+        <item>Gastrointestinal Hemorrhage</item>
+        <item>Gastrointestinal Stromal Tum</item>
+        <item>Gastroparesis</item>
+        <item>Gaucher Disease</item>
+        <item>Gender Dysphoria</item>
+        <item>Generalized Anxiety Disorde</item>
+        <item>Giardiasis</item>
+        <item>Gingivitis</item>
+        <item>Glaucoma</item>
+        <item>Glaucoma, Open Angle</item>
+        <item>Glaucoma/Intraocular Hypertension</item>
+        <item>Glioblastoma Multi</item>
+        <item>Glioblastoma Multiforme</item>
+        <item>Gonadotropin Inhibition</item>
+        <item>Gonococcal Infection, Disseminated</item>
+        <item>Gonococcal Infection, Uncomplicated</item>
+        <item>Gout</item>
+        <item>Gout, Acute</item>
+        <item>Gouty Arthritis</item>
+        <item>Granuloma Annulare</item>
+        <item>HIV Infection</item>
+        <item>Hairy Cell Leukemia</item>
+        <item>Hashimoto\'s disease</item>
+        <item>Head Injury</item>
+        <item>Head Lice</item>
+        <item>Head and Neck Cance</item>
+        <item>Headache</item>
+        <item>Heart Attack</item>
+        <item>Heart Failure</item>
+        <item>Helicobacter Pylori Infection</item>
+        <item>Hemophilia B</item>
+        <item>Hemorrhoids</item>
+        <item>Hemorrhoids (pramoxine / zinc oxide)</item>
+        <item>Hepatic Encephalopathy</item>
+        <item>Hepatitis B</item>
+        <item>Hepatitis C</item>
+        <item>Hepatocellular Carcinoma</item>
+        <item>Herbal Supplementation</item>
+        <item>Hereditary Angioedema</item>
+        <item>Herpes Simplex</item>
+        <item>Herpes Simplex Dendritic Keratitis</item>
+        <item>Herpes Simplex, Mucocutaneous/Immunocompetent Host</item>
+        <item>Herpes Simplex, Mucocutaneous/Immunocompromised Host</item>
+        <item>Herpes Simplex, Suppression</item>
+        <item>Herpes Zoste</item>
+        <item>Herpes Zoster, Prophylaxis</item>
+        <item>Hiccups</item>
+        <item>Hidradenitis Suppurativa</item>
+        <item>High Blood Pressure</item>
+        <item>High Cholesterol</item>
+        <item>High Cholesterol, Familial Heterozygous</item>
+        <item>High Cholesterol, Familial Homozygous</item>
+        <item>Hirsutism</item>
+        <item>Hot Flashes</item>
+        <item>Human Papilloma Virus</item>
+        <item>Human Papillomavirus Prophylaxis</item>
+        <item>Hypercalcemia</item>
+        <item>Hyperekplexia</item>
+        <item>Hyperhidrosis</item>
+        <item>Hyperkalemia</item>
+        <item>Hyperlipoproteinemia</item>
+        <item>Hyperlipoproteinemia Type III, Elevated beta-VLDL   IDL</item>
+        <item>Hyperlipoproteinemia Type IIa, Elevated LDL</item>
+        <item>Hyperlipoproteinemia Type IV, Elevated VLDL</item>
+        <item>Hyperparathyroidism Secondary to Renal Impairment</item>
+        <item>Hyperphosphatemia of Renal Failure</item>
+        <item>Hyperprolactinemia</item>
+        <item>Hypersomnia</item>
+        <item>Hypertensive Emergency</item>
+        <item>Hyperthyroidism</item>
+        <item>Hypertriglyceridemia</item>
+        <item>Hyperuricemia Secondary to Chemotherapy</item>
+        <item>Hypoactive Sexual Desire Disorde</item>
+        <item>Hypocalcemia</item>
+        <item>Hypodermoclysis</item>
+        <item>Hypoestrogenism</item>
+        <item>Hypoglycemia</item>
+        <item>Hypogonadism, Male</item>
+        <item>Hypokalemic Periodic Paralysis</item>
+        <item>Hypoparathyroidism</item>
+        <item>Hypotension</item>
+        <item>Hypothyroidism, After Thyroid Removal</item>
+        <item>ICU Agitation</item>
+        <item>Ichthyosis</item>
+        <item>Idiopathic Thrombocytopenic Purpura</item>
+        <item>Immunosuppression</item>
+        <item>Impetig</item>
+        <item>Indigestion</item>
+        <item>Infection Prophylaxis</item>
+        <item>Infectious Diarrhea</item>
+        <item>Inflammatory Bowel Disease</item>
+        <item>Inflammatory Conditions</item>
+        <item>Influenza</item>
+        <item>Influenza Prophylaxis</item>
+        <item>Insomnia</item>
+        <item>Insomnia, Stimulant-Associated</item>
+        <item>Insulin Resistance Syndrome</item>
+        <item>Intermittent Claudication</item>
+        <item>Intermittent Explosive Disorde</item>
+        <item>Interstitial Cystitis</item>
+        <item>Intraabdominal Infection</item>
+        <item>Intraocular Hypertension</item>
+        <item>Iritis</item>
+        <item>Iron Deficiency Anemia</item>
+        <item>Irritable Bowel Syndrome</item>
+        <item>Ischemic Stroke</item>
+        <item>Ischemic Stroke, Prophylaxis</item>
+        <item>Juvenile Idiopathic Arthritis</item>
+        <item>Juvenile Rheumatoid Arthritis</item>
+        <item>Keratitis</item>
+        <item>Keratoconjunctivitis Sicca</item>
+        <item>Keratosis</item>
+        <item>Kidney Infections</item>
+        <item>Labor Induction</item>
+        <item>Labor Pain</item>
+        <item>Lactation Augmentation</item>
+        <item>Lactose Intolerance</item>
+        <item>Left Ventricular Dysfunction</item>
+        <item>Legionella Pneumonia</item>
+        <item>Lennox-Gastaut Syndrome</item>
+        <item>Leukemia</item>
+        <item>Lewy Body Dementia</item>
+        <item>Lichen Planus</item>
+        <item>Lichen Sclerosus</item>
+        <item>Light Anesthesia</item>
+        <item>Light Sedation</item>
+        <item>Linear IgA Disease</item>
+        <item>Lipodystrophy</item>
+        <item>Liver Magnetic Resonance Imaging</item>
+        <item>Local Anesthesia</item>
+        <item>Lyme Disease</item>
+        <item>Lyme Disease, Arthritis</item>
+        <item>Lyme Disease, Erythema Chronicum Migrans</item>
+        <item>Lyme Disease, Neurologic</item>
+        <item>Lymphocytic Colitis</item>
+        <item>Lymphoma</item>
+        <item>Macular Degeneration</item>
+        <item>Macular Edema</item>
+        <item>Major Depressive Disorde</item>
+        <item>Malaria</item>
+        <item>Malaria Prevention</item>
+        <item>Malignant Glioma</item>
+        <item>Mania</item>
+        <item>Melanoma</item>
+        <item>Melanoma, Metastatic</item>
+        <item>Melasma</item>
+        <item>Meniere\'s Disease</item>
+        <item>Meningococcal Meningitis Prophylaxis</item>
+        <item>Menopausal Disorders</item>
+        <item>Menorrhagia</item>
+        <item>Menstrual Disorders</item>
+        <item>Methicillin-Resistant Staphylococcus Aureus Infection</item>
+        <item>Microscopic polyangiitis</item>
+        <item>Migraine</item>
+        <item>Migraine Prevention</item>
+        <item>Mild Cognitive Impairment</item>
+        <item>Mitral Valve Prolapse</item>
+        <item>Mononucleosis</item>
+        <item>Motion Sickness</item>
+        <item>Mountain Sickness / Altitude Sickness</item>
+        <item>Mucositis</item>
+        <item>Multiple Endocrine Adenomas</item>
+        <item>Multiple Myeloma</item>
+        <item>Multiple Sclerosis</item>
+        <item>Mumps Prophylaxis</item>
+        <item>Muscle Pain</item>
+        <item>Muscle Spasm</item>
+        <item>Muscle Twitching</item>
+        <item>Myasthenia Gravis</item>
+        <item>Mycobacterium avium-intracellulare, Treatment</item>
+        <item>Mycoplasma Pneumonia</item>
+        <item>Myelodysplastic Syndrome</item>
+        <item>Myeloproliferative Disorders</item>
+        <item>Myxedema Coma</item>
+        <item>NSAID-Induced Gastric Ulce</item>
+        <item>NSAID-Induced Ulcer Prophylaxis</item>
+        <item>Narcolepsy</item>
+        <item>Nasal Carriage of Staphylococcus aureus</item>
+        <item>Nasal Congestion</item>
+        <item>Nasal Polyps</item>
+        <item>Nausea/Vomiting</item>
+        <item>Nausea/Vomiting of Pregnancy</item>
+        <item>Nausea/Vomiting, Chemotherapy Induced</item>
+        <item>Nausea/Vomiting, Postoperative</item>
+        <item>Nausea/Vomiting, Radiation Induced</item>
+        <item>Neck Pain</item>
+        <item>Nephrocalcinosis</item>
+        <item>Nephrotic Syndrome</item>
+        <item>Neuralgia</item>
+        <item>Neuropathic Pain</item>
+        <item>Neurosurgery</item>
+        <item>Neutropenia</item>
+        <item>Neutropenia Associated with Chemotherapy</item>
+        <item>New Daily Persistent Headache</item>
+        <item>Night Terrors</item>
+        <item>Nightmares</item>
+        <item>Nocturnal Leg Cramps</item>
+        <item>Non-Hodgkin\'s Lymphoma</item>
+        <item>Non-Small Cell Lung Cance</item>
+        <item>Nonalcoholic Fatty Liver Disease</item>
+        <item>Noninfectious Colitis</item>
+        <item>Not Listed / Othe</item>
+        <item>Obesity</item>
+        <item>Obsessive Compulsive Disorde</item>
+        <item>Obstructive Sleep Apnea/Hypopnea Syndrome</item>
+        <item>Occipital Neuralgia</item>
+        <item>Onychomycosis, Fingernail</item>
+        <item>Onychomycosis, Toenail</item>
+        <item>Oophorectomy</item>
+        <item>Ophthalmic Surgery</item>
+        <item>Opiate Adjunct</item>
+        <item>Opiate Dependence</item>
+        <item>Opiate Withdrawal</item>
+        <item>Opioid Overdose</item>
+        <item>Opioid-Induced Constipation</item>
+        <item>Oppositional Defiant Disorde</item>
+        <item>Oral Thrush</item>
+        <item>Oral and Dental Conditions</item>
+        <item>Organ Transplant, Rejection Prophylaxis</item>
+        <item>Osteoarthritis</item>
+        <item>Osteolytic Bone Lesions of Multiple Myeloma</item>
+        <item>Osteolytic Bone Metastases of Solid Tumors</item>
+        <item>Osteoporosis</item>
+        <item>Otitis Externa</item>
+        <item>Otitis Media</item>
+        <item>Ovarian Cance</item>
+        <item>Ovarian Cysts</item>
+        <item>Overactive Bladde</item>
+        <item>Ovulation Induction</item>
+        <item>Pain</item>
+        <item>Pain/Feve</item>
+        <item>Pancreatic Cance</item>
+        <item>Pancreatic Exocrine Dysfunction</item>
+        <item>Panic Disorde</item>
+        <item>Paragonimus westermani, Lung Fluke</item>
+        <item>Paranoid Disorde</item>
+        <item>Parkinson\'s Disease</item>
+        <item>Parkinsonian Trem</item>
+        <item>Paroxysmal Supraventricular Tachycardia</item>
+        <item>Patent Ductus Arteriosus</item>
+        <item>Pathological Hypersecretory Conditions</item>
+        <item>Pe</item>
+        <item>Pediatric Growth Hormone Deficiency</item>
+        <item>Pelvic Inflammatory Disease</item>
+        <item>Pemphigus</item>
+        <item>Peptic Ulce</item>
+        <item>Percutaneous Coronary Intervention</item>
+        <item>Performance Anxiety</item>
+        <item>Perimenopausal Symptoms</item>
+        <item>Period Pain</item>
+        <item>Periodic Limb Movement Disorde</item>
+        <item>Periodontitis</item>
+        <item>Perioral Dermatitis</item>
+        <item>Peripheral Arterial Disease</item>
+        <item>Peripheral Neuropathy</item>
+        <item>Persistent Depressive Disorde</item>
+        <item>Pertussis</item>
+        <item>Peyronie\'s Disease</item>
+        <item>Pharyngitis</item>
+        <item>Photoaging of the Skin</item>
+        <item>Pinworm Infection (Enterobius vermicularis)</item>
+        <item>Pityriasis rubra pilaris</item>
+        <item>Plaque Psoriasis</item>
+        <item>Pneumococcal Disease Prophylaxis</item>
+        <item>Pneumonia</item>
+        <item>Polycystic Ovary Syndrome</item>
+        <item>Polycythemia Vera</item>
+        <item>Porphyria</item>
+        <item>Portal Hypertension</item>
+        <item>Post Traumatic Stress Disorde</item>
+        <item>Post-Cholecystectomy Diarrhea</item>
+        <item>Postherpetic Neuralgia</item>
+        <item>Postmenopausal Symptoms</item>
+        <item>Postoperative Increased Intraocular Pressure</item>
+        <item>Postoperative Ocular Inflammation</item>
+        <item>Postoperative Pain</item>
+        <item>Postpartum Breast Pain</item>
+        <item>Postpartum Depression</item>
+        <item>Postural Orthostatic Tachycardia Syndrome</item>
+        <item>Pre-Exposure Prophylaxis</item>
+        <item>Precocious Puberty</item>
+        <item>Premature Lab</item>
+        <item>Premature Ventricular Depolarizations</item>
+        <item>Premenstrual Dysphoric Disorde</item>
+        <item>Premenstrual Syndrome</item>
+        <item>Prevention of Atherothrombotic Events</item>
+        <item>Prevention of Bladder infection</item>
+        <item>Prevention of Cardiovascular Disease</item>
+        <item>Prevention of Dental Caries</item>
+        <item>Prevention of Hypokalemia</item>
+        <item>Prevention of Osteoporosis</item>
+        <item>Prevention of Thromboembolism in Atrial Fibrillation</item>
+        <item>Primary Immunodeficiency Syndrome</item>
+        <item>Primary Nocturnal Enuresis</item>
+        <item>Primary Ovarian Failure</item>
+        <item>Progesterone Insufficiency</item>
+        <item>Prostate Cance</item>
+        <item>Prostatitis</item>
+        <item>Prosthetic Heart Valves, Mechanical Valves - Thrombosis Prophylaxis</item>
+        <item>Prosthetic Heart Valves, Tissue Valves - Thrombosis Prophylaxis</item>
+        <item>Pruritus</item>
+        <item>Pruritus of Partial Biliary Obstruction</item>
+        <item>Pseudobulbar Affect</item>
+        <item>Pseudogout, Prophylaxis</item>
+        <item>Pseudotumor Cerebri</item>
+        <item>Psoriasis</item>
+        <item>Psoriatic Arthritis</item>
+        <item>Psychosis</item>
+        <item>Pulmonary Embolism</item>
+        <item>Pulmonary Embolism, First Event</item>
+        <item>Pulmonary Embolism, Recurrent Event</item>
+        <item>Pulmonary Hypertension</item>
+        <item>Pupillary Dilation</item>
+        <item>Radionuclide Myocardial Perfusion Study</item>
+        <item>Ramsay Hunt Syndrome</item>
+        <item>Raynaud\'s Syndrome</item>
+        <item>Reflex Sympathetic Dystrophy Syndrome</item>
+        <item>Renal Cell Carcinoma</item>
+        <item>Renal Transplant</item>
+        <item>Restless Legs Syndrome</item>
+        <item>Reversal of Nondepolarizing Muscle Relaxants</item>
+        <item>Reversal of Opioid Sedation</item>
+        <item>Rheumatoid Arthritis</item>
+        <item>Rhinitis</item>
+        <item>Rhinorrhea</item>
+        <item>Rosacea</item>
+        <item>SIADH</item>
+        <item>Salivary Gland Cance</item>
+        <item>Sarcoidosis</item>
+        <item>Scabies</item>
+        <item>Schilling Test</item>
+        <item>Schistosoma japonicum</item>
+        <item>Schizoaffective Disorde</item>
+        <item>Schizophrenia</item>
+        <item>Schnitzler Syndrome</item>
+        <item>Sciatica</item>
+        <item>Seasonal Affective Disorde</item>
+        <item>Seasonal Allergic Conjunctivitis</item>
+        <item>Seborrheic Dermatitis</item>
+        <item>Secondary Cutaneous Bacterial Infections</item>
+        <item>Secondary Hyperparathyroidism</item>
+        <item>Sedation</item>
+        <item>Seizure Prevention</item>
+        <item>Seizures</item>
+        <item>Sexual Dysfunction, SSRI Induced</item>
+        <item>Shift Work Sleep Disorde</item>
+        <item>Sinus Symptoms</item>
+        <item>Sinusitis</item>
+        <item>Sjogren\'s Syndrome</item>
+        <item>Skin Cance</item>
+        <item>Skin Disinfection, Preoperative</item>
+        <item>Skin Rash</item>
+        <item>Skin and Structure Infection</item>
+        <item>Skin or Soft Tissue Infection</item>
+        <item>Sleep Paralysis</item>
+        <item>Small Bowel Bacterial Overgrowth</item>
+        <item>Small Bowel or Pancreatic Fistula</item>
+        <item>Smoking Cessation</item>
+        <item>Social Anxiety Disorde</item>
+        <item>Soft Tissue Sarcoma</item>
+        <item>Sore Throat</item>
+        <item>Spondyloarthritis</item>
+        <item>Spondylolisthesis</item>
+        <item>Squamous Cell Carcinoma</item>
+        <item>Status Epilepticus</item>
+        <item>Still\'s Disease</item>
+        <item>Stomach Cance</item>
+        <item>Stomach Ulce</item>
+        <item>Strep Throat</item>
+        <item>Streptococcal Infection</item>
+        <item>Subarachnoid Hemorrhage</item>
+        <item>Submental Fullness</item>
+        <item>Sunburn</item>
+        <item>Supraventricular Tachycardia</item>
+        <item>Surgical Prophylaxis</item>
+        <item>Swine Flu</item>
+        <item>Systemic Lupus Erythematosus</item>
+        <item>Systemic Mastocytosis</item>
+        <item>Systemic Sclerosis</item>
+        <item>TSH Suppression</item>
+        <item>Tardive Dyskinesia</item>
+        <item>Temporomandibular Joint Disorde</item>
+        <item>Tendonitis</item>
+        <item>Testicular Cance</item>
+        <item>Thrombocythemia</item>
+        <item>Thromboembolic Stroke Prophylaxis</item>
+        <item>Thyroid Cance</item>
+        <item>Thyrotoxicosis</item>
+        <item>Tic Disorde</item>
+        <item>Tinea Barbae</item>
+        <item>Tinea Capitis</item>
+        <item>Tinea Corporis</item>
+        <item>Tinea Cruris</item>
+        <item>Tinea Pedis</item>
+        <item>Tinea Versicol</item>
+        <item>Tinnitus</item>
+        <item>Tonsillitis/Pharyngitis</item>
+        <item>Topical Disinfection</item>
+        <item>Tourette\'s Syndrome</item>
+        <item>Transient Ischemic Attack</item>
+        <item>Traveler\'s Diarrhea</item>
+        <item>Trichomoniasis</item>
+        <item>Trichotillomania</item>
+        <item>Trigeminal Neuralgia</item>
+        <item>Tuberculosis, Latent</item>
+        <item>Turner\'s Syndrome</item>
+        <item>Ulcerative Colitis</item>
+        <item>Ulcerative Colitis, Active</item>
+        <item>Ulcerative Colitis, Maintenance</item>
+        <item>Ulcerative Proctitis</item>
+        <item>Underactive Thyroid</item>
+        <item>Undifferentiated Connective Tissue Disease</item>
+        <item>Upper Limb Spasticity</item>
+        <item>Upper Respiratory Tract Infection</item>
+        <item>Urinary Incontinence</item>
+        <item>Urinary Tract Infection</item>
+        <item>Urinary Tract Stones</item>
+        <item>Urticaria</item>
+        <item>Uterine Bleeding</item>
+        <item>Uterine Fibroids</item>
+        <item>Uveitis</item>
+        <item>Vaginal Yeast Infection</item>
+        <item>Varicella-Zoste</item>
+        <item>Varicose Veins</item>
+        <item>Ventricular Arrhythmia</item>
+        <item>Ventricular Fibrillation</item>
+        <item>Ventricular Tachycardia</item>
+        <item>Vertig</item>
+        <item>Vitamin B12 Deficiency</item>
+        <item>Vitamin D Deficiency</item>
+        <item>Vitamin K Deficiency</item>
+        <item>Vitamin/Mineral Supplementation and Deficiency</item>
+        <item>Vitamin/Mineral Supplementation during Pregnancy/Lactation</item>
+        <item>Vulvodynia</item>
+        <item>Warts</item>
+        <item>Wegener\'s Granulomatosis</item>
+        <item>Weight Loss</item>
+        <item>Wilson\'s Disease</item>
+        <item>Wolff-Parkinson-White Syndrome</item>
+        <item>Women (oxybutynin)</item>
+        <item>Wound Cleansing</item>
+        <item>Xerostomia</item>
+        <item>Yellow Fever Prophylaxis</item>
+        <item>Zollinger-Ellison Syndrome</item>
+        <item>acial Lipoatrophy</item>
+        <item>acial Wrinkles</item>
+        <item>actor IX Deficiency</item>
+        <item>ailure to Thrive</item>
+        <item>amilial Cold Autoinflammatory Syndrome</item>
+        <item>amilial Mediterranean Feve</item>
+        <item>atigue</item>
+        <item>cal Segmental Glomerulosclerosis</item>
+        <item>emale Infertility</item>
+        <item>eve</item>
+        <item>ge (amlodipine / valsartan)</item>
+        <item>ge HCT (amlodipine / hydrochlorothiazide / valsartan)</item>
+        <item>ibromyalgia</item>
+        <item>lic Acid Deficiency</item>
+        <item>llicle Stimulation</item>
+        <item>mance Anxiety</item>
+        <item>me</item>
+        <item>min / pioglitazone)</item>
+        <item>min / rosiglitazone)</item>
+        <item>min / saxagliptin)</item>
+        <item>min / sitagliptin)</item>
+        <item>min)</item>
+        <item>mist (</item>
+        <item>moterol / mometasone)</item>
+        <item>moterol)</item>
+        <item>mulation) (phenylephrine)</item>
+        <item>t Care</item>
+        <item>t Pac with Cyclobenzaprine (cyclobenzaprine)</item>
+        <item>ungal Infection Prophylaxis</item>
+        <item>von Willebrand\'s Disease</item>
+        <item>zen Shoulde</item>
+    </string-array>
+</resources>

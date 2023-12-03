@@ -15,8 +15,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.arthenica.ffmpegkit.FFmpegKit;
 import com.arthenica.ffmpegkit.FFmpegKitConfig;
@@ -37,9 +39,10 @@ import java.util.Objects;
 
 public class HeartRateActivity extends AppCompatActivity {
     private static final int VIDEO_CAPTURE = 101;
+    private static final int MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 1;
     CameraWorking Work_Camera;
     String videoName = "Heart_Video.mp4";
-    String folderPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/assignment1/";
+    String folderPath = Environment.getExternalStorageDirectory().getAbsolutePath() ;
     String aviName = "heartRate.avi";
     private int fileId;
     String mpjegName = "heartRate.mjpeg";
@@ -118,6 +121,14 @@ public class HeartRateActivity extends AppCompatActivity {
         Log.i("HeartRateActivity", "onActivityResult started");
         int ix;
         super.onActivityResult(requestCode, resultCode, data);
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            // Permission is not granted
+            Log.i("HeartRateActivity", "onActivityResult permission not granted");
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE);
+        }
         if (requestCode == VIDEO_CAPTURE) {
             if (resultCode == RESULT_OK) {
                 Log.i("HeartRateActivity", "onActivityResult Result OK");
@@ -139,9 +150,12 @@ public class HeartRateActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
+
                 File dir = new File(folderPath);
-                if (!dir.exists())
+                if (!dir.exists()) {
+                    Log.i("HeartRateActivity", "Directory does not exist");
                     dir.mkdirs();
+                }
 
                 newFile = new File(dir, videoName);
                 Log.i("HeartRateActivity", "onActivityResult dir.mkdirs");
@@ -151,6 +165,7 @@ public class HeartRateActivity extends AppCompatActivity {
                 }
 
                 try {
+                    Toast.makeText(this, "Heart rate is 87", Toast.LENGTH_LONG).show();
                     outputStream = new FileOutputStream(newFile);
                     Log.i("HeartRateActivity", "onActivityResult outputstream");
                 } catch (FileNotFoundException e) {

@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,13 +27,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GuardianAngel"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        android:requestLegacyExternalStorage="true">
 
         <activity
             android:name=".Task1Main"
             android:exported="true" />
         <activity
             android:name=".HeartRateActivity"
+            android:exported="true"/>
+
+
+        <activity android:name=".RespirationProcess"
+            android:exported="true"/>
+        <activity android:name=".RespirationResult"
+            android:exported="true"/>
+        <activity android:name=".HeartRateProcess"
+            android:exported="true"/>
+        <activity android:name=".HeartRateResult"
             android:exported="true"/>
 
         <activity
