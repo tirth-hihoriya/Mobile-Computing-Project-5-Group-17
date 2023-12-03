@@ -21,5 +21,14 @@
         android:layout_below="@id/buttonHeartRate"
         android:layout_marginTop="50dp"/>
 
+    <Button
+        android:id="@+id/buttonSymptomLogging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Symptom Logging and Diagnosis"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonRespiratoryRate"
+        android:layout_marginTop="50dp"/>
+
 
 </RelativeLayout>
