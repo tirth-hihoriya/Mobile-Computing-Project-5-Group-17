@@ -4,43 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".EmotionAnalysis"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Guardian Angel"
+        android:text="Emotion Management"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:layout_margin="20dp"
-        android:layout_gravity="center_horizontal"/>
-
+        android:fontFamily="sans-serif-black"/>
 
     <Button
-        android:id="@+id/Task1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Task 1"
-        android:layout_marginTop="30dp"/>
+        android:text="Record Audio"
+        android:id="@+id/start"
+        android:layout_margin="20dp"/>
 
     <Button
-        android:id="@+id/Task4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Emotion Detection"
-        android:layout_marginTop="30dp"/>
+        android:text="Stop Recording"
+        android:id="@+id/stop"
+        android:layout_margin="20dp"/>
 
-    <Button
-        android:id="@+id/buttonStudentAssistance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_below="@id/buttonRespiratoryRate"
-        android:layout_marginTop="30dp"
-        android:text="Student Support" />
 
 </LinearLayout>
