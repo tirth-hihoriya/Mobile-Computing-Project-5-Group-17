@@ -90,7 +90,7 @@ public class RetrieveScheduleActivity extends AppCompatActivity {
         ReportSympButton.setVisibility(View.VISIBLE);
     }
     public void onReportSymptomsButtonClick(View view){
-        Intent intent = new Intent(RetrieveScheduleActivity.this, studentActivity.class);
+        Intent intent = new Intent(RetrieveScheduleActivity.this, MessageActivity.class);
         //intent.putExtra("REPORT_TYPE", "Report2");
         startActivity(intent);
     }
