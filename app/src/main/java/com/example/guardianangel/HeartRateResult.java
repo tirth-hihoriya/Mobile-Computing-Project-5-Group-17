@@ -18,7 +18,7 @@ import java.util.Date;
 public class HeartRateResult extends AppCompatActivity {
 
     private String user, Date;
-    int HR;
+    public int HR;
     DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
     Date today = Calendar.getInstance().getTime();
 

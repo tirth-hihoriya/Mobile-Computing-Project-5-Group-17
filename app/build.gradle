@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.guardianangel"
-        minSdk 30
+        minSdk 26
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -48,9 +48,21 @@ dependencies {
     implementation 'com.quickbirdstudios:opencv-contrib:4.5.3.0'
     implementation 'com.opencsv:opencsv:5.5.2'
     implementation group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
+    implementation("com.squareup.retrofit2:retrofit:2.1.0")
+    implementation("com.google.code.gson:gson:2.6.2")
+    implementation("com.squareup.retrofit2:converter-gson:2.1.0")
+    implementation("commons-codec:commons-codec:1.3")
+    implementation("avalon-framework:avalon-framework:4.1.3")
+    implementation("javax.servlet:servlet-api:2.3")
+    implementation("log4j:log4j:1.2.12")
+    implementation("logkit:logkit:1.0.1")
+    implementation("commons-logging:commons-logging:1.1")
+    implementation("ical4j:ical4j:0.9.20")
+    implementation("androidx.test.ext:junit:1.1.5")
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    annotationProcessor ("android.arch.persistence.room:compiler:1.0.0-alpha9")
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
 
 }

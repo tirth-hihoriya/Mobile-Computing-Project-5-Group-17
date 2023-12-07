@@ -16,7 +16,7 @@ import java.util.Date;
 public class RespirationResult extends AppCompatActivity {
 
     private String user, Date;
-    int RR;
+    public int RR;
     DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
     Date today = Calendar.getInstance().getTime();
 

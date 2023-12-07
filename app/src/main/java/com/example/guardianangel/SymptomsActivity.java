@@ -1,30 +1,26 @@
 package com.example.guardianangel;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.FileNotFoundException;
+import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvException;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashMap;
-import com.opencsv.CSVReader;
-import com.opencsv.exceptions.CsvException;
-
-import java.io.FileReader;
-import java.util.*;
+import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class SymptomsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
@@ -33,7 +29,7 @@ public class SymptomsActivity extends AppCompatActivity implements AdapterView.O
     //private DatabaseWorking db_handler;
     private String text;
     private String te;
-    private String [] symptomsList = {
+    public String [] symptomsList = {
             "ADHD",
             "AIDS Related Wasting",
             "AV Heart Block",
@@ -747,6 +743,7 @@ public class SymptomsActivity extends AppCompatActivity implements AdapterView.O
             "von Willebrand's Disease",
             "zen Shoulde",
     };
+    public String drugtosym;
 //    private HashMap<String, Float> hash;
     //private RatingBar ratingBar;
     private ArrayList <String> symptoms = new ArrayList<String>();
@@ -793,6 +790,7 @@ public class SymptomsActivity extends AppCompatActivity implements AdapterView.O
                     TextView drug = (TextView) findViewById(R.id.drug);
                     // display all record's drug value in list in text view
                     drug.setText(drugName.toString());
+                    drugtosym = (String) drug.getText();
                 } catch (IOException | CsvException e) {
                     throw new RuntimeException(e);
                 }
@@ -814,10 +812,12 @@ public class SymptomsActivity extends AppCompatActivity implements AdapterView.O
 
     }
 
+
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         String selected_item = (String) adapterView.getItemAtPosition(i);
         symptoms.clear();
+
         symptoms.add(selected_item);
 //        Float rating = hash.get(selected_item);
 //        ratingBar.setRating(rating);
@@ -827,6 +827,7 @@ public class SymptomsActivity extends AppCompatActivity implements AdapterView.O
     public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
+
 
     public List<String> diagnosis(String query, Context context) throws IOException, CsvException {
         // Code for symptom logging and diagnosis goes here
