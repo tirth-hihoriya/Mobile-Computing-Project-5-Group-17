@@ -1,24 +1,32 @@
-package com.example.mobilecomp1;
+package com.example.guardianangel;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.HashMap;
+import com.opencsv.CSVReader;
 
-import static com.example.mobilecomp1.MainActivity.ROW;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.List;
+
+//import static com.example.mobilecomp1.MainActivity.ROW;
 public class ReportSymptomsActivity extends AppCompatActivity {
-    private int hr = 62; // Replace with actual HR value
-    private int rr = 18;
+    private int hr; // Replace with actual HR value
+    private int rr;
     private Button btnMailTAToRemedies,btnMailToProfessor;
-    private DbUpload helper;
+
     private TextView SymNameDispTextView;
 
     private static HashMap<String,Double> symOps= new HashMap<>();
@@ -33,22 +41,47 @@ public class ReportSymptomsActivity extends AppCompatActivity {
         SymNameDispTextView = findViewById(R.id.SymptsNameRes);
 
 
-        symOps = DatabaseOperations();
 
-        //int stringCount = 0;
-        int doubleCount = 0;
-        int FourplusRatingCount= 0;
+        HeartRateResult InstanceofHR = new HeartRateResult();
+        hr = InstanceofHR.HR;
+
+        RespirationResult InstanceofRR = new RespirationResult();
+        rr = InstanceofRR.RR;
+        try {
+            Resources resources = this.getResources();
+            InputStream inputStream = resources.openRawResource(R.raw.final_file);
+            InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                // Split the CSV line by comma
+                String[] values = line.split(",");
+
+                // Assuming the first two columns are key and value
+                if (values.length >= 2) {
+                    String key = values[1].trim();
+                    Double value = Double.valueOf(values[3].trim());
+                    symOps.put(key, value);
+                }
+            }
+
+            inputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Double valDrug = null;
         StringBuilder text = new StringBuilder("");
         for (HashMap.Entry<String, Double> entry : symOps.entrySet()) {
             Log.d("Key: " , entry.getKey());
             Log.d(", Value: " , entry.getValue().toString());
-            if (entry.getKey() != null && entry.getValue() != 0.0) {
-                text.append(entry.getKey()+ " with " +entry.getValue()+ " Rating \n");
-                doubleCount++;
-                if (doubleCount <= 2 ) {
-                    if(entry.getValue() >= 4.0){
-                        FourplusRatingCount++;
-                    }
+            String symptomsSelectedSymptomsActivity = getIntent().getStringExtra("selectedSymptom");
+            String textviewRes = getIntent().getStringExtra("DrugName");
+            if (entry.getKey().equals(symptomsSelectedSymptomsActivity)) {
+                if (entry.getValue() == Double.valueOf(textviewRes)) {
+                    text.append(entry.getKey() + " with " + entry.getValue() + " Rating \n");
+                    valDrug= entry.getValue();
                 }
             }
 
@@ -59,27 +92,22 @@ public class ReportSymptomsActivity extends AppCompatActivity {
             // Repeat this for all spinner items
             SymNameDispTextView.setText("The Symptoms you entered are :\n");
             // First clause: 3 or more spinner items are rated
-            if (doubleCount >= 3) {
-                Log.d("Double Count", String.valueOf(doubleCount));
+            if (valDrug >= 0.2) {
+                Log.d("val Count", String.valueOf(valDrug));
                 SymNameDispTextView.append(text+"\n");
                 btnMailToProfessor.setVisibility(View.VISIBLE);
             } else {
-                Log.d("Double Count < 3", String.valueOf(doubleCount));
                 SymNameDispTextView.append(text+"\n");
-
-                if (FourplusRatingCount > 0.0) {
-                    Log.d("FourRating cnt double cnt <3", String.valueOf(FourplusRatingCount));
-                    btnMailToProfessor.setVisibility(View.VISIBLE);
-                } else {
                     // Third clause: make btnMailTAToRemedies visible
                     btnMailTAToRemedies.setVisibility(View.VISIBLE);
                 }
             }
-        } else {
+         else {
             // HR or RR conditions not met, make btnMailToProfessor visible
             btnMailToProfessor.setVisibility(View.VISIBLE);
         }
     }
+
     public void onReportSymptomsMailTA(View view){
         Intent intent = new Intent(ReportSymptomsActivity.this, RemediesActivity.class);
         startActivity(intent);
@@ -88,7 +116,7 @@ public class ReportSymptomsActivity extends AppCompatActivity {
         Intent intent = new Intent(ReportSymptomsActivity.this, MessageActivity.class);
         startActivity(intent);
     }
-    private HashMap<String,Double> DatabaseOperations(){
+    /*private HashMap<String,Double> DatabaseOperations(){
         final HashMap<String,Double> symptomsMap= new HashMap<>();
         //DB Code
         helper = new DbUpload(this);
@@ -101,8 +129,8 @@ public class ReportSymptomsActivity extends AppCompatActivity {
                     ROW = rowcur.getInt(i);
                     Log.d("ROW", String.valueOf(ROW));
                 }
-*/
-        // Retrieve Spinner values and ratings values from the database
+
+        Retrieve Spinner values and ratings values from the database
         Cursor cursor = helper.getSymptomsData(ROW);
         if (cursor != null && cursor.moveToFirst()) {
             do {
@@ -125,7 +153,7 @@ public class ReportSymptomsActivity extends AppCompatActivity {
        // }
        // rowcur.close();
         return symptomsMap;
-    }
+    }*/
     public static HashMap<String, Double> getSymOps() {
         return symOps;
     }

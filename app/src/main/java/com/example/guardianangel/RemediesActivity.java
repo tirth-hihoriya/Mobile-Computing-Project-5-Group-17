@@ -1,4 +1,4 @@
-package com.example.mobilecomp1;
+package com.example.guardianangel;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,19 +25,50 @@ public class RemediesActivity extends AppCompatActivity {
         startActivity(intent);
     }
     private void PrintRemedies(){
+        SymptomsActivity InstanceofSymArray = new SymptomsActivity();
+        String [] symptomsList =InstanceofSymArray.symptomsList;
+
         HashMap<String, Double> symOps = ReportSymptomsActivity.getSymOps();
         for (HashMap.Entry<String,Double> entry : symOps.entrySet()){
             String a = entry.getKey();
             Double value = entry.getValue();
-            if(value != 0.0){
-                Log.d("EntryKey",entry.getKey());
+            String symptomsSelectedSymptomsActivity = getIntent().getStringExtra("selectedSymptom");
+            String textviewRes = getIntent().getStringExtra("DrugName");
+            if(a.equals(symptomsSelectedSymptomsActivity) && value == Double.valueOf(textviewRes)){
+                for (String name : symptomsList) {
+                    if (name.charAt(0) == 'A' || name.charAt(0) == 'B' ||name.charAt(0) == 'C' ||name.charAt(0) == 'D'|| name.charAt(0) == Character.toLowerCase('A') ||name.charAt(0) == Character.toLowerCase('B')||name.charAt(0) == Character.toLowerCase('C')||name.charAt(0) == Character.toLowerCase('D')) {
+                        RemRes.append("you can try drinking plenty of water, taking a short break to rest your eyes, or doing some gentle neck and shoulder stretches.\\n Ensure you're in a well-ventilated space and consider dimming lights to reduce strain.\\n");
+                    }
+                    else if(name.charAt(0) == 'E' ||name.charAt(0) == 'F' ||name.charAt(0) == 'G' ||name.charAt(0) == 'H'||name.charAt(0) == Character.toLowerCase('E')||name.charAt(0) == Character.toLowerCase('F')||name.charAt(0) == Character.toLowerCase('G')||name.charAt(0) == Character.toLowerCase('H')){
+                        RemRes.append("try resting in a quiet, dark room, applying a cold or warm compress to your forehead or neck, and staying hydrated.\n Over-the-counter pain relievers like acetaminophen, ibuprofen, or aspirin might also be considered, but consult with a healthcare professional if you have concerns or if the headache persists.\n");
+                    }
+                    else if(name.charAt(0) == 'I' ||name.charAt(0) == 'J' ||name.charAt(0) == 'K' ||name.charAt(0) == 'L'||name.charAt(0) == Character.toLowerCase('I')||name.charAt(0) == Character.toLowerCase('K')||name.charAt(0) == Character.toLowerCase('J')||name.charAt(0) == Character.toLowerCase('L')){
+                        RemRes.append("practice slow, deep breathing exercises, maintain good posture, and ensure your environment is well-ventilated.\n Stay calm and avoid triggers like smoke or strong odors.\n If shortness of breath continues, consult with a healthcare professional for a thorough evaluation.\n");
 
+                    }
+                    else if(name.charAt(0) == 'M' ||name.charAt(0) == 'N' ||name.charAt(0) == 'O' ||name.charAt(0) == 'P'||name.charAt(0) == Character.toLowerCase('M')||name.charAt(0) == Character.toLowerCase('N')||name.charAt(0) == Character.toLowerCase('O')||name.charAt(0) == Character.toLowerCase('P')){
+                        RemRes.append("consider taking short breaks to stretch and move around, stay hydrated, and ensure you're getting adequate sleep.\n A healthy snack with a mix of protein and carbohydrates can provide a quick energy boost.\n If fatigue persists, it may be beneficial to evaluate your sleep patterns, stress levels, and overall lifestyle for potential improvements.\n");
+                    }
+                    else if(name.charAt(0) == 'Q' ||name.charAt(0) == 'R' ||name.charAt(0) == 'S'||name.charAt(0) == Character.toLowerCase('Q')||name.charAt(0) == Character.toLowerCase('R')||name.charAt(0) == Character.toLowerCase('S')){
+                        RemRes.append("consider aromatic remedies like sniffing strong scents such as essential oils. Stay well-hydrated, and include flavorful foods in your diet to stimulate taste. Good oral hygiene can also contribute to a heightened sense of taste. If the issue persists or worsens, consult with a healthcare professional for further evaluation.\n");
+                    }
+                    else if(name.charAt(0) == 'T' ||name.charAt(0) == 'U' ||name.charAt(0) == 'V' ||name.charAt(0) == 'W'||name.charAt(0) == Character.toLowerCase('T')||name.charAt(0) == Character.toLowerCase('U')||name.charAt(0) == Character.toLowerCase('V')||name.charAt(0) == Character.toLowerCase('W')){
+                        RemRes.append("you can try ginger tea, peppermint, deep breathing exercises, or eating small, bland snacks like crackers.\n Staying hydrated and avoiding strong odors may also help alleviate symptoms.\n");
+                    }
+                    else if(name.charAt(0) == 'X' ||name.charAt(0) == 'Y' ||name.charAt(0) == 'Z'||name.charAt(0) == Character.toLowerCase('X')||name.charAt(0) == Character.toLowerCase('Y')||name.charAt(0) == Character.toLowerCase('Z')){
+                        RemRes.append("prioritize rest and stay well-hydrated with water or electrolyte solutions.\n Use a cool compress or take a tepid bath to help bring down the temperature.\n Over-the-counter fever-reducing medications like acetaminophen or ibuprofen can be considered, but adhere to recommended dosages.\n If the fever persists or is accompanied by severe symptoms, seek medical advice promptly.\n");
+                    }
+                    else {
+                        RemRes.append("\nNo Symptoms have been selected.\n");
+                        break;
+                    }
+                }
                 Log.d("a",a);
                 Log.d("value", String.valueOf(value));
-                if(a.equals("Headache")) {
+                /*if(a.equals("Headache")) {
                     if (value <= 3.0 && value >= 0.0) {
                         RemRes.append("Headache: \nFor a mild headache (below 3 out of 5), you can try drinking plenty of water, taking a short break to rest your eyes, or doing some gentle neck and shoulder stretches.\n Ensure you're in a well-ventilated space and consider dimming lights to reduce strain.\n");
-                    } else if (entry.getValue() <= 5.0 && entry.getValue() > 3.0) {
+                    } else if (value <= 5.0 && value > 3.0) {
                         RemRes.append("Headache: \nIf your headache is more intense (above 3 out of 5), try resting in a quiet, dark room, applying a cold or warm compress to your forehead or neck, and staying hydrated.\n Over-the-counter pain relievers like acetaminophen, ibuprofen, or aspirin might also be considered, but consult with a healthcare professional if you have concerns or if the headache persists.\n");
                     } else
                         break;
@@ -113,11 +144,8 @@ public class RemediesActivity extends AppCompatActivity {
                         RemRes.append("Cough: \nFor a more intense cough (above 3 out of 5), consider using over-the-counter cough medications that contain ingredients like dextromethorphan or guaifenesin.\n Stay hydrated, and use a humidifier to add moisture to the air.\n Warm saltwater gargles or throat lozenges may provide relief.\n If the cough persists or is accompanied by other concerning symptoms, consult with a healthcare professional for personalized advice and possible further evaluation.\n");
                     } else
                         break;
-                }
-                if(a.isEmpty()) {
-                    RemRes.append("\nNo Symptoms have been selected.\n");
-                    break;
-                }
+                }*/
+
                 }
 
         }

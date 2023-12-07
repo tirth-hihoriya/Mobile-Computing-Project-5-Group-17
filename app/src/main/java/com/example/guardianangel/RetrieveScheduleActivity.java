@@ -1,4 +1,4 @@
-package com.example.mobilecomp1;
+package com.example.guardianangel;
 
 import android.content.Context;
 import android.content.Intent;

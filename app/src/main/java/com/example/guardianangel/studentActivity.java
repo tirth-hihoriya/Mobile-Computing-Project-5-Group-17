@@ -1,4 +1,4 @@
-package com.example.mobilecomp1;
+package com.example.guardianangel;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,23 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import net.fortuna.ical4j.data.CalendarBuilder;
-import net.fortuna.ical4j.data.ParserException;
-import net.fortuna.ical4j.model.Calendar;
-import net.fortuna.ical4j.model.Component;
-import net.fortuna.ical4j.model.Property;
-import net.fortuna.ical4j.model.PropertyList;
-import net.fortuna.ical4j.model.component.VEvent;
-import net.fortuna.ical4j.model.property.Summary;
-import net.fortuna.ical4j.model.property.Uid;
-
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.UUID;
 
 public class studentActivity extends AppCompatActivity {
      private Button newScheduleButton;
