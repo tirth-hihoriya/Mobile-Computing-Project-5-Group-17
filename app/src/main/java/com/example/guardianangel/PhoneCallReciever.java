@@ -27,7 +27,7 @@ public class PhoneCallReciever extends BroadcastReceiver {
 
 //    EmotionAnalysis act=new EmotionAnalysis();
     static MediaRecorder myAudioRecorder;
-    String url="http://5468-34-125-101-66.ngrok-free.app/test";
+    String url="http://98a8-34-125-55-206.ngrok-free.app/test";
     @Override
     public void onReceive(Context context, Intent intent) {
         if (intent.getAction() != null && intent.getAction().equals("android.intent.action.PHONE_STATE")) {
